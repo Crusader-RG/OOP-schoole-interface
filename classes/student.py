@@ -9,6 +9,9 @@ class Student:
         self.role = role
         self.school_id = school_id
 
+    def __str__(self):
+        return f"\n{self.name}\n--------------\nage: {self.age}\nid: {self.school_id}"
+
     @classmethod
     def all_students(cls):
         students = []
